@@ -1,0 +1,16 @@
+# uni-app 微信小程序代码包优化
+# 排除编译输出目录
+unpackage/
+node_modules/
+
+# 排除开发工具文件
+.DS_Store
+Thumbs.db
+*.log
+
+# 排除编辑器配置文件
+.vscode/
+.idea/
+
+# 排除大型资源文件（如果不需要）
+*.map 
