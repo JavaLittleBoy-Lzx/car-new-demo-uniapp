@@ -1,0 +1,29 @@
+{
+    "id": "Feify-CarsPlus",
+    "name": "xueren-parking",
+    "displayName": "雪人停车",
+    "version": "1.0.3",
+    "description": "",
+    "keywords": [
+        "洗车养车",
+        "预约保养",
+        "车辆维修",
+        "上门服务",
+        "扫码挪车"
+    ],
+    "dcloudext": {
+        "type": "projecttemplate",
+        "sale": {
+            "regular": {
+                "price": "0.00"
+            },
+            "sourcecode": {
+                "price": "0.00"
+            }
+        }
+    },
+    "dependencies": {
+        "dayjs": "^1.11.13",
+        "thorui-uni": "^3.0.0"
+    }
+}

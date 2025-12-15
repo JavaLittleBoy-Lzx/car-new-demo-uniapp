@@ -1,0 +1,252 @@
+{
+	"pages": [{
+			"path": "pages/auth/phone-auth",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "手机号授权",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/webview/direct-auth",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "微信授权",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/site/facility",
+			"style": {
+				"navigationBarTitleText": "审核页面",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"backgroundTextStyle": "dark",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/subscription/guide",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "关注公众号",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "#667eea"
+			}
+		},
+		{
+			"path": "pages/qrcode/qrcode",
+			"style": {
+				"navigationBarTitleText": "关注公众号",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue",
+			"tn-(.*)": "@/components/tuniao-ui/components/tn-$1/tn-$1.vue"
+		}
+	},
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [
+			{
+				"path": "reservation/form",
+				"style": {
+					"navigationBarTitleText": "预约信息",
+					"navigationBarBackgroundColor": "#0081ff",
+					"navigationBarTextStyle": "white",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "reservation/searchResult/searchResult",
+				"style": {
+					"navigationBarTitleText": "查询结果",
+					"navigationBarBackgroundColor": "#0081ff",
+					"navigationBarTextStyle": "white",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "reservation/dataList/dataList",
+				"style": {
+					"navigationBarTitleText": "数据列表",
+					"navigationBarBackgroundColor": "#0081ff",
+					"navigationBarTextStyle": "white",
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": true,
+					"backgroundTextStyle": "dark"
+				}
+			},
+			{
+				"path": "violation/owner-new-violation",
+				"style": {
+					"navigationBarTitleText": "违规统计",
+					"navigationBarBackgroundColor": "#0081ff",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "user/password",
+				"style": {
+					"navigationBarTitleText": "修改密码",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "user/mobile",
+				"style": {
+					"navigationBarTitleText": "修改手机号",
+					"enablePullDownRefresh": false
+				}
+			}
+		]
+	}, {
+		"root": "pagesB",
+		"name": "butler",
+		"pages": [{
+			"path": "butler/qrcode-generator",
+			"style": {
+				"navigationBarTitleText": "访客邀请",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		}]
+	}, {
+		"root": "pagesC",
+		"name": "main",
+		"pages": [{
+			"path": "demo/plate-scanner",
+			"style": {
+				"navigationBarTitleText": "车牌识别演示",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}]
+	}, {
+		"root": "pagesD",
+		"name": "reservation",
+		"pages": [{
+			"path": "auth/visitor-apply",
+			"style": {
+				"navigationBarTitleText": "申请访客身份",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "reservation/index",
+			"style": {
+				"navigationBarTitleText": "预约查询",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0081ff"
+			}
+		}, {
+			"path": "reservation/result",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "reservation/resultSuccessed",
+			"style": {
+				"navigationBarTitleText": "预约结果",
+				"navigationBarBackgroundColor": "#12c286",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "reservation/visitor-query",
+			"style": {
+				"navigationBarTitleText": "我的预约",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"backgroundTextStyle": "dark",
+				"navigationStyle": "default"
+			}
+		}]
+	}, {
+		"root": "pagesE",
+		"name": "business",
+		"pages": [{
+			"path": "site/approve_transfer",
+			"style": {
+				"navigationBarTitleText": "审批转交",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "site/approve_search",
+			"style": {
+				"navigationBarTitleText": "审批查询",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "site/approve_detail",
+			"style": {
+				"navigationBarTitleText": "审批详情",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "violation/violation",
+			"style": {
+				"navigationBarTitleText": "违规车辆",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom",
+					"enablePullDownRefresh": true,
+					"backgroundTextStyle": "dark"
+			}
+		}, {
+			"path": "violation/owner-new-violation",
+			"style": {
+				"navigationBarTitleText": "业主违规",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "violation/add-violation",
+			"style": {
+				"navigationBarTitleText": "新增违规记录",
+				"navigationBarBackgroundColor": "#0081ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}]
+	}],
+	"globalStyle": {
+		"mp-alipay": {
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
